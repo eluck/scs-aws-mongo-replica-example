@@ -8,5 +8,9 @@
 
   "dependencies": {
     "scs-aws-mongo-replica": "../scs-aws-mongo-replica"
+  },
+
+  "scripts": {
+    "refresh": "rm -rf node_modules/scs-aws-mongo-replica/ && cd ../scs-aws-mongo-replica && npm run compile && cd ../scs-aws-mongo-replica-example/ && yarn install"
   }
 }
